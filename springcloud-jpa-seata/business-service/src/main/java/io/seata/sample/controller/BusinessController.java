@@ -13,7 +13,7 @@ public class BusinessController {
 
     /**
      * 购买下单，模拟全局事务提交
-     *
+     *  http://127.0.0.1:8084/purchase/commit
      * @return
      */
     @RequestMapping("/purchase/commit")
@@ -23,8 +23,9 @@ public class BusinessController {
     }
 
     /**
+     * io.seata.sample.service.AccountService#debit(java.lang.String, java.math.BigDecimal)   userID 传入 1002 直接报错
      * 购买下单，模拟全局事务回滚
-     *
+     *  http://127.0.0.1:8084/purchase/rollback
      * @return
      */
     @RequestMapping("/purchase/rollback")

@@ -81,7 +81,12 @@
 			</dependency>
 			<dependency>
 				<groupId>io.seata</groupId>
-				<artifactId>seata-all</artifactId>
+				<artifactId>seata-spring</artifactId>
+				<version>${seata.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.seata</groupId>
+				<artifactId>seata-dubbo</artifactId>
 				<version>${seata.version}</version>
 			</dependency>
 			<dependency>
@@ -185,7 +190,15 @@
 		<!-- seata -->
 		<dependency>
 			<groupId>io.seata</groupId>
-			<artifactId>seata-all</artifactId>
+			<artifactId>seata-spring</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.seata</groupId>
+			<artifactId>seata-dubbo</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.seata</groupId>
+			<artifactId>seata-spring</artifactId>
 		</dependency>
 	</dependencies>
 

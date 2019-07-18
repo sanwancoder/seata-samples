@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Description：
- *
+ * http://127.0.0.1:8084/purchase/commit
  * @author fangliangsheng
  * @date 2019/3/28
  */
