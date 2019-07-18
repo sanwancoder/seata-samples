@@ -33,4 +33,17 @@ public class BusinessService {
 
         orderFeignClient.create(userId, commodityCode, orderCount);
     }
+
+    /**
+     * 减库存，下订单
+     *
+     * @param userId
+     * @param commodityCode
+     * @param orderCount
+     */
+    public void purchaseWithoutTransaction(String userId, String commodityCode, int orderCount) {
+        storageFeignClient.deduct(commodityCode, orderCount);
+
+        orderFeignClient.create(userId, commodityCode, orderCount);
+    }
 }

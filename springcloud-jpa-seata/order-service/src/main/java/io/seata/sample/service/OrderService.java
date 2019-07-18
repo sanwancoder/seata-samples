@@ -37,7 +37,7 @@ public class OrderService {
         orderDAO.save(order);
 
         userFeignClient.debit(userId, orderMoney);
-
+        System.out.println("=================");
     }
 
 }

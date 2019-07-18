@@ -39,4 +39,25 @@ public class BusinessController {
 
         return true;
     }
+
+
+    /**
+     *  io.seata.sample.service.BusinessService#purchaseWithoutTransaction(java.lang.String, java.lang.String, int) 没有加分布式事务注解
+     *  http://127.0.0.1:8084/purchase/noTransaction
+     *
+     *  storage_tbl 减少 但是 order_tbl 和 account_tbl无变化 三个表数据存在不一致的情况
+     *
+     * @return
+     */
+    @RequestMapping("/purchase/noTransaction")
+    public Boolean purchaseNoTransaction() {
+        try {
+            businessService.purchaseWithoutTransaction("1002", "2001", 1);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
 }
