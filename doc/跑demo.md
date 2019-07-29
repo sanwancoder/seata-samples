@@ -2,4 +2,8 @@
 2. 执行sql
 3. 启动各个子服务
 4. BusinessController 调用
+5. 测试
+   - http://localhost:8084/purchase/commit
+   - http://localhost:8084/purchase/rollback
+   - http://localhost:8084/purchase/noTransaction
 
