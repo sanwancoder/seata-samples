@@ -3,7 +3,7 @@
 3. 启动各个子服务
 4. BusinessController 调用
 5. 测试
-   - http://localhost:8084/purchase/commit
-   - http://localhost:8084/purchase/rollback
-   - http://localhost:8084/purchase/noTransaction
+   - http://localhost:25001/purchase/commit
+   - http://localhost:25001/purchase/rollback
+   - http://localhost:25001/purchase/noTransaction
 
